@@ -1,7 +1,12 @@
-module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: 'LWOLoader.js',
-    path: './dist'
-  }
-}
+const config = {
+    mode: 'development',
+    entry: './main.js',
+    output: {
+        filename: './app.bundle.js',
+    },
+    devServer: {
+        watchContentBase: true,
+    },
+};
+
+module.exports = config;

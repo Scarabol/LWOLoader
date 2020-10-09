@@ -29,8 +29,8 @@
 
 	loader.load("LegoRR0/World/Shared/A000_piping.bmp", function(texture) {
 		texture.blending = THREE.NoBlending;
-		var geometry = new THREE.BoxGeometry( 1, 1, 1 );
-		var material = new THREE.MeshBasicMaterial( { map: texture, transparent: true } );
+		const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+		const material = new THREE.MeshBasicMaterial( { map: texture, transparent: true } );
 		cube = new THREE.Mesh( geometry, material );
 		scene.add( cube );
 		render();
